@@ -1,0 +1,44 @@
+{
+	"info": {
+		"_postman_id": "9c5a4bc6-a7c9-4d67-b1fa-d8c75fdeda5e",
+		"name": "FIAP - Tech Challenge 4",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21910225",
+		"_collection_link": "https://grey-crescent-804940.postman.co/workspace/Team-Workspace~23db2264-9c46-477a-8170-68b1164532bb/collection/21910225-9c5a4bc6-a7c9-4d67-b1fa-d8c75fdeda5e?action=share&source=collection_link&creator=21910225"
+	},
+	"item": [
+		{
+			"name": "cliente-service",
+			"item": [
+				{
+					"name": "cadastrar-cliente",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nome\": \"Ana Souza\",\r\n  \"cpf\": \"12345678901\",\r\n  \"dataNascimento\": \"1990-07-15\",\r\n  \"enderecos\": [\r\n    {\r\n      \"rua\": \"Rua das Flores\",\r\n      \"numero\": 123,\r\n      \"complemento\": \"Apartamento 45\",\r\n      \"bairro\": \"Centro\",\r\n      \"cidade\": \"São Paulo\",\r\n      \"estado\": \"SP\",\r\n      \"cep\": \"01001000\"\r\n    },\r\n    {\r\n      \"rua\": \"Avenida Brasil\",\r\n      \"numero\": 456,\r\n      \"complemento\": \"\",\r\n      \"bairro\": \"Jardins\",\r\n      \"cidade\": \"São Paulo\",\r\n      \"estado\": \"SP\",\r\n      \"cep\": \"01420000\"\r\n    }\r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/clientes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"clientes"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
